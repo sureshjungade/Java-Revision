@@ -1,0 +1,24 @@
+package com.masai;
+
+public class Question2 {
+
+	
+	public static void main(String[] args) {
+		Lottery lottery = new Lottery();
+		System.out.println(lottery.checkwinner(567));
+	}
+}
+
+class Lottery  {
+	
+	public int checkwinner(int number) {
+		
+		int lotteryNumber = 567;
+		if(number==lotteryNumber) {
+			return 10000;
+		}
+		else {
+			if()
+		}
+	}
+}

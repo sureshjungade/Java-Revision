@@ -1,0 +1,27 @@
+package com.masai;
+
+public class Question3 {
+
+	public static void main(String[] args) {
+		long startTime = System.nanoTime();
+		String s3 = "Value1";
+		String s2 = "Value2";
+
+		
+		
+		for (int i = 0; i < 100000; ++i) {
+				s3 = s3 + s2;
+		}
+//		StringBuffer s3 = new StringBuffer("Value1");
+//		String s2 = "Value2";
+//
+//		for (int i = 0; i < 100000; ++i) {
+//			s3.append(s2);
+//		}
+		long elapsedTime = System.nanoTime() - startTime;
+		System.out.println(((elapsedTime/100000)/1000)%60+" minutes");
+		
+		
+		
+	}
+}

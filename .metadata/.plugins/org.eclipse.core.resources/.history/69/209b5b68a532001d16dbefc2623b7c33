@@ -1,0 +1,13 @@
+package com.masai;
+
+public class Question2 {
+
+	
+	public static void main(String[] args) {
+		
+	}
+}
+
+ class Lottery  {
+	
+}

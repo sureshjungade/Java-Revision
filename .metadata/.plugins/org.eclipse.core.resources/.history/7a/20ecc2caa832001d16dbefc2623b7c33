@@ -1,0 +1,52 @@
+package com.masai;
+
+import java.util.Arrays;
+
+public class Question2 {
+
+	
+	public static void main(String[] args) {
+		Lottery lottery = new Lottery();
+		
+		System.out.println(lottery.checkwinner(567));
+	}
+}
+
+class Lottery  {
+	
+	public int checkwinner(Integer number) {
+		System.out.println();
+		Integer lotteryNumber = 567;
+		if(number==lotteryNumber) {
+			return 10000;
+		}
+		else {
+			String str = number.toString();
+			Integer arr[] = new  Integer[str.length()];
+			for(int i=0; i<arr.length; i++) {
+				arr[i] = str.charAt(i) - '0';
+			}
+			Arrays.sort(arr);
+			
+			String str1 = number.toString();
+			Integer arr1[] = new  Integer[str1.length()];
+			for(int i=0; i<arr1.length; i++) {
+				arr1[i] = str.charAt(i) - '0';
+			}
+			Arrays.sort(arr1);
+			int count = 0;
+			for(int i=0; i<arr.length; i++) {
+				if(arr[i].equals(arr1[i])) {
+					count++;
+				}
+			}
+			if(count==arr.length) {
+				return 3000;
+			}
+		}else {
+			return 1220;
+		}
+		//return 0;
+	}
+	
+}
